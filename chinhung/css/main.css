@@ -142,5 +142,36 @@ header .gnb ul a {
 }
 
 footer {
-    margin: 400px 0 0 0;
+    margin: 66px 0 106px 0;
+}
+footer .first ul {
+    display: flex;
+    width: 356px;
+    color: #1d1d1d;
+}
+footer .first ul li {
+    padding:  0 22px;
+    border-right: #cccccc 1px solid;
+}
+footer .first ul li:last-child {
+    border: none;
+}
+footer .first ul li:first-child {
+    padding: 0 22px 0 0;
+}
+footer .scd ul {
+    display: flex;
+    width: 762px;
+    margin: 51px 0 0 0;
+    justify-content: space-between;
+}
+footer .scd ul li {
+    color: #666;
+    margin: 0 0 20px 0;
+}
+footer .scd ul li strong {
+    font-weight: 700;
+}
+footer .scd p {
+    color: #666;
 }
