@@ -5,6 +5,7 @@ body {
     color: #555;
     line-height: 1.2;
     font-weight: 400;
+    word-break: break-all;
 }
 
 * {
@@ -19,6 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 li {
     list-style: none;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 .wapper {
     width: 1260px;
     margin: 0 auto;
@@ -31,12 +36,83 @@ li {
     color: 1d1d1d;
     font-weight: 700;
     margin: 0 0 15px 0;
+    color: #1d1d1d;
 }
 .recips .food ul{
     display: flex;
     justify-content: space-between;
     margin: 19px 0 0 0;
+    border-radius: 20px;
 }
 .recips .food ul li h2 {
-    margin: 29px 0 0 0;
+    margin: 29px 0 11px 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+.recips .sub_tit h1 {
+    color: #1d1d1d;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin: 121px 0 0 0;
+}
+.news .wapper h1 {
+    color: #1d1d1d;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 73px 0 37px 0;
+}
+.news .cnt_1 ul {
+    display: flex;
+    height: 335px;
+    justify-content: space-between;
+}
+.news .cnt_1 ul li {
+    width: 404px;
+    color: #fff;
+    font-size: 30px;
+    padding: 234px 26px 29px 24px;
+    border-radius: 20PX;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.news .cnt_1 ul li.item1 {
+    background-image: url(../images/br_1.png);
+}
+.news .cnt_1 ul li.item2 {
+    background-image: url(../images/br_2.png);
+}
+.news .cnt_1 ul li.item3 {
+    background-image: url(../images/br_3.png);
+}
+.news .cnt_2 ul {
+    display: flex;
+    height: 335px;
+    justify-content: space-between;
+    margin: 26px 0 0 0;
+}
+.news .cnt_2 ul li {
+    width: 404px;
+    color: #fff;
+    font-size: 30px;
+    padding: 234px 26px 29px 24px;
+    border-radius: 20PX;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.news .cnt_2 ul li.item4 {
+    background-image: url(../images/br_4.png);
+}.news .cnt_2 ul li.item5 {
+    background-image: url(../images/br_5.png);
+}.news .cnt_2 ul li.item6 {
+    background-image: url(../images/br_6.png);
+}
+
+.news {
+    margin: 0 0 300px 0;
 }
