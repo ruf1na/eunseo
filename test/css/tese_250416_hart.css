@@ -12,6 +12,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.wrapper {
+    width: 1290px;
+    margin: 0 auto;
+}
 h1,h2,h3,h4,h5,h6 {
     color: inherit;
     font-size: inherit;
@@ -32,7 +36,7 @@ header {
     background-repeat: no-repeat;
     height: 1028px;
 }
-header .wrapper {
+header .menu {
     display: flex;
     justify-content: space-between;
 }
@@ -70,4 +74,40 @@ header .visual .more {
     padding: 18px 34px 18px 34px;
     display: block;
     width: 190px;
+}
+.cnt .visual h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #767676;
+    margin: 166px 0 20px 0;
+}
+.cnt .visual .tit {
+    color: #ff652e;
+    font-size: 50px;
+    margin: 0 0 50px 0;
+}
+.cnt .visual ul {
+    margin: 78px 0 0 0;
+    display: flex;
+    gap: 24px;
+}
+
+.cnt .visual .info ul li {
+    height: 354px;
+    width: 297px;
+    border-radius: 20px;
+    background: no-repeat center center / cover;
+}
+.cnt .visual .info ul li.news_1 {
+    background-image: url(../images/hart_inf1.png);
+}
+.cnt .visual .info ul li.news_2 {
+    background-image: url(../images/hart_inf2.png);
+}
+.cnt .visual .info ul li.news_3 {
+    background-image: url(../images/hart_inf3.png);
+}
+.cnt .visual .info ul li.news_4 {
+    background-image: url(../images/hart_inf4.png);
 }
