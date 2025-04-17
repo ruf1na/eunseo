@@ -25,14 +25,16 @@ a {
 li {
     list-style: none;
 }
-header .wrapper {
-    display: flex;
-    justify-content: space-between;
+header {
     background-image: url(../images/header_br.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 1028px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
 }
 header .gnb ul {
     display: flex;
@@ -46,4 +48,26 @@ header .gnb li a {
     padding: 43px 44px 43px 44px ;
     font-size: 20px;
     font-weight: 700;
+}
+header .visual {
+    color: #fff;
+    width: 1260px;
+    margin: 0 auto;
+}
+header .visual h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.03em;
+    margin: 290px 0 26px 0;
+}
+header .visual p {
+    margin: 0 0 41px 0;
+}
+header .visual .more {
+    background-color:#ff652e ;
+    border-radius: 28px;
+    padding: 18px 34px 18px 34px;
+    display: block;
+    width: 190px;
 }
