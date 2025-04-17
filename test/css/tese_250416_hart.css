@@ -94,10 +94,11 @@ header .visual .more {
 }
 
 .cnt .visual .info ul li {
-    height: 354px;
+    height: 369px;
     width: 297px;
     border-radius: 20px;
     background: no-repeat center center / cover;
+    color: #fff;
 }
 .cnt .visual .info ul li.news_1 {
     background-image: url(../images/hart_inf1.png);
@@ -110,4 +111,47 @@ header .visual .more {
 }
 .cnt .visual .info ul li.news_4 {
     background-image: url(../images/hart_inf4.png);
+}
+.cnt .visual .info ul li h3 {
+
+    text-align: right;
+}
+.cnt .visual .info ul li.news_1 h3 {
+    padding: 16px 15px 219px 105px;
+}
+.cnt .visual .info ul li.news_2 h3 {
+    padding: 16px 8px 195px 103px;
+}
+.cnt .visual .info ul li.news_3 h3 {
+    padding: 16px 14px 219px 65px;
+}
+.cnt .visual .info ul li.news_4 h3 {
+    padding: 16px 8px 195px 95px;
+}
+.cnt .visual .info ul li .suv_tit {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2;
+    letter-spacing: 0;
+    padding: 0 0 24px 22px ;
+}
+.cnt .visual .info ul li.news_1 .suv_tit {
+    padding: 0 0 14px 22px;
+}
+.cnt .visual .info ul li .suv_tit2 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    padding: 0 20px 0 23px;
+    word-break: break-all;
+}
+.cnt .visual .info ul li.news_3 .suv_tit2 {
+    padding: 0 34px 0 23px;
+}
+.cnt .visual .info ul li.news_4 .suv_tit2 {
+    padding: 0 36px 0 23px;
+}
+body {
+    margin: 0 0 400px 0;
 }
