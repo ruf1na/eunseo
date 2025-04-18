@@ -1,0 +1,90 @@
+@import url(font.css);
+@import url(default.css);
+@import url(common.css);
+
+header {
+    position: absolute; /*기본은 body를 기준으로 정렬-> wrap에 position: relative를줘서 wrap의 기준으로 정렬*/
+    left: 0; /*wrap를 기준으로 왼쪽*/
+    top: 0;/*wrap 기준으로 위쪽*/
+    color: #fff;
+    width: 100%;/*wrap 기준으로 100%*/
+    height: 90px;
+    border-bottom:1px rgba(255, 255, 255, 0.2) solid;
+}
+header .gnb ul {
+    display: flex;
+    justify-content: center;
+}
+header .gnb ul a {
+    display: block;
+    line-height: 90px; /*높이 아니고 행간으로 주기*/
+    font-weight: 700;
+    padding: 0 21px;
+}
+.visual {
+    background: url(../images/visual_bg.jpg) no-repeat center center / cover ;
+    height: 807px;
+    color: #fff;
+    text-align: center;
+}
+.visual h2 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 372px 0 20px 0;
+}
+.product {
+    margin: 182px 0 0 0;
+}
+.product .wrapper {
+    position: relative;/*more정렬의 기준점을 만드는 속성*/
+}
+
+.product h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 0 0 64px 0;
+    color: #1d1d1d;
+    line-height: 1.5;
+}
+.product .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.product .list ul li {
+    width: calc(33.33% - 16px);
+    /*한줄에 나와야하는 갯수 (3개) 100/3 33.33%
+    여백의 총합(2개) 24+24 = 48 / 3 은 16px*/
+}
+.product .list ul li a {
+    display: block;
+    position: relative;/*h3의 정렬 기준점이 되기 위해 주는 속성.*/
+}
+.product .list ul li a .photo { /*이미지 하단 여백 삭제*/
+    font-size: 0;
+    letter-spacing: 0;
+}
+.product .list ul li a h3 {
+    position: absolute;/*ul li에 a를 기준으로*/
+    left: 28px ;
+    bottom: 28px ;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    width: calc(100% - 56px); /*h3넓이 지정*/
+}
+.product .more {/*순서를 역행하기 위해 필요한 속성. html코딩 순서가 a가 밑에있어야함. 밑에 코딩하고 위로 끌어올리는 개념.*/
+    position: absolute; /*wrapper를 기준으로 정렬됨(rmore를 감싸고있는 태그)*/
+    right: 0;
+    top: 11px;
+    border: #1d1d1d solid 1px;
+    border-radius: 50px;
+    padding: 12px 45px;
+    font-size: 20px;
+    color: #1d1d1d;
+    line-height: 1.2;
+}
+
+
+body {
+    margin: 0 0 500px 0;
+}

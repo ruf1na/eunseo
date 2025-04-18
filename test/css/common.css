@@ -1,0 +1,24 @@
+/*본문에 나오는 모든 태그를 감싸는게 body, 그래서 기본 글자스타일을 body에서 정의함.
+  글자 스타일은 상속이 가능하기때문에.(글자 스타일만 상속 가능)*/
+body {
+    font-family: 'Pretendard', sans-serif;
+    /*반드시 font.css에서 선언한 이름으로 불러야 함.
+      snas-serif는 프리텐다드가 없다면 대체용으로 쓰일 고딕 서체*/
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #555;
+      word-break: keep-all;/*단어 단위로 줄바꿈*/
+}
+
+.wrapper { /*디자인한 레이아웃 크키*/
+    width: 1260px;
+    margin: 0 auto; /* 가운데 정렬 */
+}
+#wrap { /*홈페이지 전체를 감싸는 요소,id요소여서 #으로 부름*/
+  min-width: 1300px;/*최소넓이 wrapper의 사이즈+좌우에 줄 최소 여백
+  1260+20+20=1300px*/
+  position: relative; /*정렬의 기준을 줄때 사용.*/
+  /*header가 wrap을 기준으로 정렬하기위해.*/
+  /*최소 넓이를 지정해줬기때문에 header도 wrap의 크기와 같이 줄어야함.*/
+}
