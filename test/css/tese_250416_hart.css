@@ -173,16 +173,22 @@ header .visual .more {
 }
 .cnt .visual .story .more {
     display: flex;
-    gap: 583px;
+    align-items: flex-end;
+    justify-content: space-between;
 }
-
 .cnt .visual .story ul a {
     background-color: #ff652e;
     border-radius: 29px;
     color: #fff;
-    box-sizing: border-box;
-    padding: 20px 30px;
+    padding: 20px 32px;
 }
+.cnt .visual .story ul {
+    display: flex;
+}
+.cnt .visual .story ul li {
+    margin: 0 0 0 17px;
+}
+
 
 body {
     margin: 0 0 400px 0;

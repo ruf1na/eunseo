@@ -122,6 +122,104 @@ main .visual p {
     padding: 9px 40px 8px 36px;
     margin: 35px 0 0 0;
 }
+.community .tit h2 {
+    color: #669525;
+    line-height: 1.2;
+    margin: 198px 0 16px 0;
+}
+.community .tit p {
+    color: #1d1d1d;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.community .list {
+    margin: 42px 0 0 0;
+    display: flex;/*group을 양쪽으로 배치*/
+    justify-content: space-between;
+}
+.community .list .group {
+    width: calc(50% - 6px); /* 그룹 두개의 각 넓이*/
+    /*나누는 분할수(2개- 100/2  50%) 빼기 사이여백의 총합 나누기 분할개수(여백12 나누기 분할개수 2 =6)
+    = 50% - 6 */
+}
+.community .list .group ul {
+    display: flex;/*li를 좌우로 배치*/
+    flex-wrap: wrap; /*li가 두줄로 생성 되는걸 허락하는 태그*/
+    gap: 12px;
+}
+.community .list .group ul li.color,
+.community .list .group ul li.gray {
+    width: calc(50% - 6px);/*반응형 넓이 계산법 cacl 계산법*/
+}
+.community .list .group ul li.color a,
+.community .list .group ul li.gray a {
+    height: 258px; /* li의 사이지와 a의 사이즈가 동일해야할때 (높이가 필요한경우)높이는 a, 넓이는 li*/
+}
+.community .list .group ul li.color.bg1 a {
+    background-color: #669525;
+    color: #fff;
+}
+.community .list .group ul li.color.bg2 a {
+    background-color: #5D4833;
+    color: #fff;
+}
+.community .list .group ul li.gray a {
+    background-color:#F4F4F4 ;
+    color: #3d3d3d;
+}
+.community .list .group ul li a {
+    padding: 0 34px 34px 34px;
+    display: flex; /*bock 태그랑 중첩되서 bock태그 삭제*/
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.community .list .group ul li.review {
+    width: 100%;
+    /*감싸는요소(ul)에 100%가 들어감*/
+}
+.community .list .group ul li.review a {
+    height: 386px;
+    color: #fff;
+}
+.community .list .group ul li.review.bg1 a {
+    background: url(../images/community_bg1.jpg) no-repeat center center / cover;
+}
+.community .list .group ul li.review.bg2 a {
+    background: url(../images/community_bg2.jpg) no-repeat center center / cover;
+}
+.community .list .group ul li a h3 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 7px 0 22px 0;
+    /*긴 제목 한줄로 제안*/
+    white-space: nowrap; /*무조건 한줄로 지정*/
+    overflow: hidden; /*범위 넘어가는 글자 자름*/
+    text-overflow: ellipsis;/*넘어가는 글자 점으로 표현*/
+}
+.community .list .group ul li a .date {
+    display: flex;
+    gap: 20px;
+}
+.community .list .group ul li.color a .date,
+.community .list .group ul li.review a .date {
+    color: rgb(255, 255, 255, 0.8);
+}
 footer {
-    margin: 400px 0 0 0;
+    border-top: 1px #CCCCCC solid;
+    padding: 58px 0 70px 0;
+    color: #555;
+    margin: 148px 0 0 0;
+}
+footer .f_nav ul {
+    display: flex;
+    gap: 42px;
+    margin: 0 0 45px 0;
+}
+footer .f_info {
+    margin: 0 0 25px 0;
+}
+footer .f_info .group {
+    display: flex;
+    margin: 0 0 7px 0; /*글자들 행간주는대신 마진으로도 대체가능*/
 }
