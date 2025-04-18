@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 body {
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: 20px;
@@ -75,19 +76,23 @@ header .visual .more {
     display: block;
     width: 190px;
 }
-.cnt .visual h2 {
+.cnt .visual .ex h2 {
     font-size: 25px;
     font-weight: 700;
     letter-spacing: -0.03em;
     color: #767676;
     margin: 166px 0 20px 0;
 }
-.cnt .visual .tit {
+.cnt .visual .ex .tit {
     color: #ff652e;
     font-size: 50px;
     margin: 0 0 50px 0;
+    letter-spacing: -0.03em;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 700;
+    font-style: normal;
 }
-.cnt .visual ul {
+.cnt .visual .info ul {
     margin: 78px 0 0 0;
     display: flex;
     gap: 24px;
@@ -152,6 +157,33 @@ header .visual .more {
 .cnt .visual .info ul li.news_4 .suv_tit2 {
     padding: 0 36px 0 23px;
 }
+.cnt .visual .story h2 {
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: #767676;
+    margin: 180px 0 24px 0;
+}
+.cnt .visual .story .tit {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin: 0 0 46px 0;
+    color: #1d1d1d;
+}
+.cnt .visual .story .more {
+    display: flex;
+    gap: 583px;
+}
+
+.cnt .visual .story ul a {
+    background-color: #ff652e;
+    border-radius: 29px;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
 body {
     margin: 0 0 400px 0;
 }
