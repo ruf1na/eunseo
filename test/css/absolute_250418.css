@@ -73,7 +73,7 @@ header .gnb ul a {
     width: calc(100% - 56px); /*h3넓이 지정*/
 }
 .product .more {/*순서를 역행하기 위해 필요한 속성. html코딩 순서가 a가 밑에있어야함. 밑에 코딩하고 위로 끌어올리는 개념.*/
-    position: absolute; /*wrapper를 기준으로 정렬됨(rmore를 감싸고있는 태그)*/
+    position: absolute; /*wrapper를 기준으로 정렬됨(more를 감싸고있는 태그)*/
     right: 0;
     top: 11px;
     border: #1d1d1d solid 1px;
