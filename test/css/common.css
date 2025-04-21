@@ -22,3 +22,15 @@ body {
   /*header가 wrap을 기준으로 정렬하기위해.*/
   /*최소 넓이를 지정해줬기때문에 header도 wrap의 크기와 같이 줄어야함.*/
 }
+
+.blind {
+  /*html표준을 따르면 글자를 써야하는데
+  디자인에는 글자가 보이면 안되서 글자를 없애는 클래스*/
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden; /*1px안에 글자가 보이니까 넘치는 글자를 숨겨버림.*/
+  color: transparent;
+}
